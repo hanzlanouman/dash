@@ -1,0 +1,33 @@
+{
+  "welcome": "مرحبا",
+  "header": {
+    "avatar": "الصورة الرمزية",
+    "dropdown": "قائمة منسدلة",
+    "logo": "شعار"
+  },
+  "heading": "اﻟﻤﺆﺷﺮات",
+  "studentDone": "ﻛﺎﻣﻞ اﻟﻤﺘﻌﻠﻤﻴﻦ",
+  "studentsAssigned": "ﻋﺪد اﻟﻤﻘﺮرات",
+  "studentsPassed": "ﻋﺪد اﻟﻤﺘﻌﻠﻤﻴﻦ اﻟﻨﺸﻄﻴﻦ",
+  "studentsDegree": "ﻋﺪد اﻟﺸﻬﺎدات اﻟﺼﺎدرة",
+  "studentHours": "ﻋﺪد ﺳﺎﻋﺎت اﻟﺘﻌﻠﻢ",
+  "metricHeading": "ﺣﺎﻟﺔ اﻟﻤﻘﺮرات",
+  "metrics": [
+    {
+      "metric": "ﻓﻌﺎل",
+      "color": "#3c50e0"
+    },
+    {
+      "metric": "ﻣﺆرﺷﻒ",
+      "color": "#8fd0ef"
+    },
+    {
+      "metric": "ﻣﻨﺘﻬﻲ",
+      "color": "#6477f3"
+    },
+    {
+      "metric": "ﻗﺮﻳﺒﺎ",
+      "color": "#10adcf"
+    }
+  ]
+}
