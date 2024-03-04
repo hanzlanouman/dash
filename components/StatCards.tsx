@@ -52,7 +52,7 @@ const StatCards = () => {
             <div>
                 <h1 className='text-5xl py-6 font-bold text-gray-700'>{t.heading}</h1>
             </div>
-            <div className='grid xl:grid-cols-5  md:grid-cols-2 grid-cols-1 gap-3 '>
+            <div className='grid xl:grid-cols-5  md:grid-cols-2 grid-cols-1 gap-6 '>
                 <StatCard data={data} />
             </div>
         </div>

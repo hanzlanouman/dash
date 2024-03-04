@@ -97,44 +97,50 @@ const data = [
 ];
 const LineChart = () => {
     return (
-        <div className='rounded-3xl bg-white py-8 '>
-            <h1 className='text-3xl font-black p-8 mb-8'>إﺟﻤﺎﻟﻲ اﻟﺰﻳﺎرات</h1>{' '}
-            <AreaChart
-                data={data}
-                width={900}
-                height={300}
-                margin={{
-                    top: 10,
-                    right: 30,
-                    left: 30,
-                    bottom: 0,
-                }}
-            >
-                <defs>
-                    <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
-                        <stop offset='5%' stopColor='#ccb1f6' stopOpacity={0.8} />
-                        <stop offset='95%' stopColor='#ccb1f6' stopOpacity={0.2} />
-                    </linearGradient>
-                </defs>
-                <XAxis dataKey='name' axisLine={false} tickLine={false} />
-                <YAxis
-                    axisLine={false}
-                    tickLine={false}
-                    orientation='right'
-                    tickMargin={50}
-                />
-                <CartesianGrid stroke='3 3' vertical={false} />
-                <Tooltip />
-                <Area
-                    type='linear' // Changed to linear for sharper edges
-                    dataKey='uv'
-                    stroke='#8884d8'
-                    fillOpacity={20}
-                    fill='url(#colorUv)'
-                    strokeWidth={2}
-                    dot={{ stroke: '#8884d8', strokeWidth: 10, fill: '#ffffff' }} // Permanently mark the data points
-                />
-            </AreaChart>
+        <div className='rounded-3xl bg-white py-8 w-full'>
+            <div className='flex justify-between items-center'><h1 className='text-3xl text-gray-700 font-black p-8 mb-8'>إﺟﻤﺎﻟﻲ اﻟﺰﻳﺎرات</h1>
+                <p className='text-gray-500 text-base p-8 mb-8'>
+                    29-12-2021 - 29-01-2022
+                </p>
+            </div>
+            <ResponsiveContainer width='100%' height={300}>
+                <AreaChart
+                    data={data}
+                    width={900}
+                    height={300}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 30,
+                        bottom: 0,
+                    }}
+                >
+                    <defs>
+                        <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
+                            <stop offset='5%' stopColor='#ccb1f6' stopOpacity={0.8} />
+                            <stop offset='95%' stopColor='#ccb1f6' stopOpacity={0.2} />
+                        </linearGradient>
+                    </defs>
+                    <XAxis dataKey='name' axisLine={false} tickLine={false} tickMargin={8} />
+                    <YAxis
+                        axisLine={false}
+                        tickLine={false}
+                        orientation='right'
+                        tickMargin={50}
+                    />
+                    <CartesianGrid strokeDasharray='3 0' vertical={false} />
+                    <Tooltip />
+                    <Area
+                        type='linear' // Changed to linear for sharper edges
+                        dataKey='uv'
+                        stroke='#8884d8'
+                        fillOpacity={20}
+                        fill='url(#colorUv)'
+                        strokeWidth={2}
+                        dot={{ stroke: '#8884d8', strokeWidth: 10, fill: '#ffffff' }} // Permanently mark the data points
+                    />
+                </AreaChart>
+            </ResponsiveContainer>
         </div>
     );
 };

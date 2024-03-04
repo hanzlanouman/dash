@@ -23,7 +23,7 @@ const Metrics = () => {
 
     return (
         <div className='bg-white  xl:p-8 p-2 flex xl:items-start items-center flex-col rounded-3xl justify-center '>
-            <h1 className='text-3xl  font-black'>{t.metricHeading}</h1>
+            <h1 className='text-3xl text-gray-700  font-black'>{t.metricHeading}</h1>
             <div className='p-4'>
                 <Chart />
             </div>
